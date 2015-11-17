@@ -92,7 +92,7 @@ public class EventActivity extends GdgActivity {
 
         @Override
         public int getCount() {
-            return 1;
+            return 2;
         }
 
         @Override
@@ -101,8 +101,10 @@ public class EventActivity extends GdgActivity {
                 case 0:
                     return EventOverviewFragment.createfor(mEventId);
                 case 1:
-                    return new AgendaFragment();
+                    return new EventMapFragment();
                 case 2:
+                    return new AgendaFragment();
+                case 3:
                     return new MoreFragment();
             }
             return null;
